@@ -1,0 +1,7 @@
+("package = box")
+if package == red:
+    print ("put in living room")
+elif package == box:
+    print("put in den")
+else:
+    print ("put in closet")
