@@ -1,7 +1,33 @@
+elephant = 200
+if elephant > 200:
+    print ("That is a lot")
+elif elephant == 200:
+    print ("That sounds about right")
+else:
+    print ("That sounds too thin")
+
+
 package = "box"
 if package == "red":
-    print ("put in living room")
+   print ("put in living room")
 elif package == "box":
     print("put in den")
 else:
     print ("put in closet")
+
+
+essay = "Henry"
+if essay == "Rose":
+    print ("third paragraph")
+elif essay == "Rony":
+    print ("fourth paragraph")
+else:
+    print ("second paragraph")
+
+dog_food = "1 cups"
+if dog_food < "2 cups":
+    print ("give 1 handful of green beans")
+elif dog_food == "2 cups":
+    print ("give 5 green beans")
+else:
+    print ("Error")
