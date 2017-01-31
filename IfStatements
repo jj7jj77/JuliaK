@@ -31,3 +31,11 @@ elif dog_food == "2 cups":
     print ("give 5 green beans")
 else:
     print ("Error")
+
+number = int(input("Enter a lucky number"))
+if number >= 50 and 100:
+    print ("sorry, try again")
+elif number >= 0 and 50:
+    print ("you are the lucky winner!")
+else:
+    print ("error not a lucky winner")
