@@ -1,0 +1,21 @@
+'''ask for a name ask for a favorite number 1-10 (number only)
+
+round that number to a whole number if the number is greater than 10 tell them to pick a number under 10
+
+if the favorite number is 
+-under or equal to 3  wow thats a small number 
+-4-7 oooo that is a lucky number 
+-8-10 that is a cool number
+
+use "for" so that every number until the number of their favorite number it has to print "im a little crazy" that many times
+
+print "my name is name version number" where blank one is the name and number is the favorite number but floated
+
+print a countdown from their favorite number to 0 with iteration 
+hint: use a while statement 
+hint: have favorite number equal a countdownvariable
+
+print "time for a beer"
+
+using "range" start with 0 bottles of beer and add one until you are up to your favorite number, 
+each time i want you to tell me how many bottles of beer you drank'''
