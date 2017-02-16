@@ -6,24 +6,22 @@ int main()
 int a;
 int z;
 float total;
-
+##Variables defined here
     	z = 9;
     	a = 18;
-
+##Program 1
     	cout << a + z << endl;	##this outputs the a+z
-        
+##program 2        
     	z = z + 6;
     	cout << --z << endl;    ## output z+6 subtracting one when completed 
-    	a++;                    ## 
+##Program 3        
+    	a++;                    ## add 1 to 18 a is now 19
     
-        		if (!((a > z)||(!(total == 365))))
+        		if (!((a > z)||(!(total == 365)))) ##z =14, a = 19 validate it
             	{
             	cout << "Good Job" << endl;
             	}
 }
-
-and the other half:
-
             else
         		{
             		if (!(total==180))
