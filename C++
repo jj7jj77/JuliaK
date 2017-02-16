@@ -9,34 +9,40 @@ float total;
 ##Variables defined here
     	z = 9;
     	a = 18;
+##################################################################################################################
 ##Program 1
     	cout << a + z << endl;	##this outputs the a+z
+##################################################################################################################
 ##program 2        
     	z = z + 6;
     	cout << --z << endl;    ## output z+6 subtracting one when completed 
+##################################################################################################################        
 ##Program 3        
     	a++;                    ## add 1 to 18 a is now 19
-    
-        		if (!((a > z)||(!(total == 365)))) ##z =14, a = 19 validate it ## if !(19>14) or total is 365 
+##################################################################################################################        
+##Program 4   z = 14 and a = 19 at this point 
+
+        		if (!((a > z)||(!(total == 365)))) ## if !(19>14) or total is 365 
             	    {
-            	    cout << "Good Job" << endl;
+            	    cout << "Good Job" << endl; ##Print "good Job"
             	    }
-                }
                 else
-        		{
-            		if (!(total==180))
-            		{
-                		total=a%z;
-                		cout<< "your total is "<<total<< endl;
-                		z++;
-            		}
-            		else
-            		{
-                		cout<<"Try Again" << endl;
-               		cout<<--total;
-           	 		}
-       	 	}
-     	cout<<total<< endl;
-     	cout<<++z<< endl;
-     	cout<<a<< endl;
+        		    {
+            		    if (!(total==180))
+            		        {
+                		     total=a%z;
+                		     cout<< "your total is "<<total<< endl;
+                		     z++;
+            		        }
+            	        else
+            		        {
+                	        cout<<"Try Again" << endl;
+               		        cout<<--total;
+           	 		        }
+       	 	        }
+##################################################################################################################                    
+Program 5                   
+cout<<total<< endl;
+cout<<++z<< endl;
+cout<<a<< endl;
 
