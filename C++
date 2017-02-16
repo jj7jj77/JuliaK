@@ -17,12 +17,12 @@ float total;
 ##Program 3        
     	a++;                    ## add 1 to 18 a is now 19
     
-        		if (!((a > z)||(!(total == 365)))) ##z =14, a = 19 validate it
-            	{
-            	cout << "Good Job" << endl;
-            	}
-}
-            else
+        		if (!((a > z)||(!(total == 365)))) ##z =14, a = 19 validate it ## if !(19>14) or total is 365 
+            	    {
+            	    cout << "Good Job" << endl;
+            	    }
+                }
+                else
         		{
             		if (!(total==180))
             		{
