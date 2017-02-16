@@ -10,10 +10,11 @@ float total;
     	z = 9;
     	a = 18;
 
-    	cout << a + z << endl;	
+    	cout << a + z << endl;	##this outputs the a+z
+        
     	z = z + 6;
-    	cout << --z << endl;
-    	a++;
+    	cout << --z << endl;    ## output z+6 subtracting one when completed 
+    	a++;                    ## 
     
         		if (!((a > z)||(!(total == 365))))
             	{
