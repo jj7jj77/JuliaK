@@ -1,1 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int a;
+int z;
+float total;
+
+    	z = 9;
+    	a = 18;
+
+    	cout << a + z << endl;	
+    	z = z + 6;
+    	cout << --z << endl;
+    	a++;
+    
+        		if (!((a > z)||(!(total == 365))))
+            	{
+            	cout << "Good Job" << endl;
+            	}
+}
+
+and the other half:
+
+            else
+        		{
+            		if (!(total==180))
+            		{
+                		total=a%z;
+                		cout<< "your total is "<<total<< endl;
+                		z++;
+            		}
+            		else
+            		{
+                		cout<<"Try Again" << endl;
+               		cout<<--total;
+           	 		}
+       	 	}
+     	cout<<total<< endl;
+     	cout<<++z<< endl;
+     	cout<<a<< endl;
 
