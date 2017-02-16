@@ -22,7 +22,7 @@ float total;
 ##################################################################################################################        
 ##Program 4   z = 14 and a = 19 at this point 
 
-    if (!((a > z)||(!(total == 365)))) ## if !(19>14) or total is 365 
+    if (!((a > z)||(!(total == 365)))) ## if !(19>14) or total is not 365 
         {
         cout << "Good Job" << endl; ##Print "good Job"
         }
@@ -45,3 +45,5 @@ Program 5
 cout<<total<< endl;
 cout<<++z<< endl;
 cout<<a<< endl;
+
+(!(||))
