@@ -1,1 +1,114 @@
 
+#include<iostream>
+using namespace std;
+void input(char ulist[15], int & n);
+void Bubblesort(char ulist[15], char slist[15], int n);
+void desBubblesort(char ulist[15], char slist[15], int n);
+void print(char list[15], int n);
+void frequency(char slist[15], char freq[15], int n);
+void minMax(char slist[15], int n);
+double average; int n, sum;
+
+void main()
+{
+	char ulist[15], slist[15], freq[15], ch;
+	input(ulist, n);
+	cout << "Unsorted";
+	print(ulist, n);
+	Bubblesort(ulist, slist, n);
+	cout << "Ascending Sorted";
+	print(slist, n);
+	desBubblesort(ulist, slist, n);
+	cout << "Descending Sorted";
+	print(slist, n);
+	frequency(slist, freq, n);
+	minMax(slist, n);
+	cin >> ch;
+}
+void input(char ulist[15], int & n)
+{
+	int i = 0;
+	char value;
+	cout << "Enter character : \n";
+	cin >> value;
+
+	while (i < 14 && value != '#')
+	{
+		i++;
+		ulist[i] = value;
+		if (i < 13)
+		{
+			cin >> value;
+		}
+	}
+	n = i;
+}
+void Bubblesort(char unlist[15], char sortlist[15], int n)
+{
+	int i, j, temp;
+	for (i = 1; i <= n; i++)
+		sortlist[i] = unlist[i];
+	for (j = 1; j <= n - 1; j++)
+		for (i = 1; i <= n - j; i++)
+			if (sortlist[i] > sortlist[i + 1])
+			{
+				temp = sortlist[i];
+				sortlist[i] = sortlist[i + 1];
+				sortlist[i + 1] = temp;
+			}
+}
+void desBubblesort(char unlist[15], char sortlist[15], int n)
+{
+	int i, j, temp;
+	for (i = 1; i <= n; i++)
+		sortlist[i] = unlist[i];
+	for (j = 1; j <= n - 1; j++)
+		for (i = 1; i <= n - j; i++)
+			if (sortlist[i] < sortlist[i + 1])
+			{
+				temp = sortlist[i];
+				sortlist[i] = sortlist[i + 1];
+				sortlist[i + 1] = temp;
+			}
+}
+void print(char list[15], int n)
+{
+	int i;
+	sum = 0;
+	cout << " List of characters by ASCII code are : \n";
+	for (i = 1; i <= n; ++i)
+	{
+		cout << list[i] << '\n';
+		sum = sum + list[i];
+	}
+}
+void frequency(char slist[15], char freq[15], int n)
+{
+	cout << "Frequency of the characters \n";
+	int i;
+	int j;
+	int count = 1;
+	for (i = 1; i <= n; i++)
+	{
+		if (slist[i] == slist[i + 1])
+		{
+			count++;
+		}
+		else
+		{
+			if (count > 1)
+			{
+				cout << slist[i] << "   Frequency: " << count << "\n";
+			}
+			count = 1;
+		}
+	}
+}
+void minMax(char slist[15], int n)
+{
+	char min = slist[1];
+	char max = slist[n];
+
+	cout << "\nLargest:" << min << "\n\n";
+	cout << "\nSmallest:" << max << "\n\n";
+}
