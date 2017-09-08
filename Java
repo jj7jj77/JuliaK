@@ -15,7 +15,7 @@ public class Eggs
         double total_Cost = (total_of_Dozen + total_of_Single);
                        
      System.out.println("You ordered " + eggs + " eggs "); 
-     System.out.println("That's " + (total_of_Dozen) + " dozen at $" + dozenEggs + " per dozen. " 
+     System.out.println("That's " + (total_of_Dozen) + " dozen at $" + dozenEggs + " per dozen. ");
      System.out.println("And that's " + (total_of_Single) + " loose eggs at $" + singleEggs + " cents each. ");
      System.out.println("For a total of $" + total_Cost);
     }
